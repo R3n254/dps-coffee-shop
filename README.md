@@ -1,31 +1,22 @@
-DPS Coffee Shop ☕
+# DPS Coffee Shop ☕
 
-A web-based coffee shop application built with native PHP, MySQL, and Bootstrap 5.
+A web-based coffee shop application built with PHP, MySQL, and Bootstrap 5.
 
-Features
+## Features
+- Role-based authentication (Admin & Customer)
+- Product management (CRUD)
+- Automatic 10% customer discount
+- Responsive design
 
-Role-based authentication (Admin & Customer)
+## Tech Stack
+- PHP
+- MySQL
+- HTML5
+- Bootstrap 5
+- JavaScript
 
-Product management (CRUD)
-
-Automatic 10% customer discount
-
-Responsive design
-
-Tech Stack
-
-PHP
-
-MySQL
-
-HTML5
-
-Bootstrap 5
-
-JavaScript
-
-Project Structure
-
+## Project Structure
+```text
 coffee_shop/
 ├── auth.php
 ├── config.php
@@ -36,15 +27,14 @@ coffee_shop/
 ├── edit_product.php
 ├── delete.php
 └── navbar.php
+```
 
-Setup
+## Setup
+1. Place the project folder in `C:\xampp\htdocs\`.
+2. Start Apache and MySQL in XAMPP.
+3. Open phpMyAdmin and execute:
 
-Place the project folder in C:\xampp\htdocs\.
-
-Start Apache and MySQL in XAMPP.
-
-Open phpMyAdmin and execute the following SQL:
-
+```sql
 CREATE DATABASE IF NOT EXISTS coffee_shop;
 USE coffee_shop;
 
@@ -64,11 +54,10 @@ CREATE TABLE product (
     price INT NOT NULL,
     image_url TEXT NOT NULL
 );
+```
 
-Open http://localhost/coffee_shop/login.php.
+4. Open [http://localhost/coffee_shop/login.php](http://localhost/coffee_shop/login.php).
 
-Default Admin Login
-
-Username: admin
-
-Password: admin123
+### Default Admin Login
+- **Username:** `admin`
+- **Password:** `admin123`
